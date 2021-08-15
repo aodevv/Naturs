@@ -1,3 +1,18 @@
+/*
+0 - 600px:           Phone
+6000 - 900px:        Tablet portrait
+900 - 1200px:        Tablet landscape
+1200 - 1800px:       Desktop
+1800 - infinity:     Big Desktop
+
+*/
+/*
+$breakpoint argument choices: 
+- phone
+- tab-port
+- tab-land
+- big-desktop
+*/
 *,
 *::after,
 *::before {
@@ -8,6 +23,26 @@
 
 html {
   font-size: 62.5%;
+}
+@media (max-width: 60rem) {
+  html {
+    font-size: 50%;
+  }
+}
+@media (max-width: 90rem) {
+  html {
+    font-size: 60%;
+  }
+}
+@media (max-width: 120rem) {
+  html {
+    font-size: 70%;
+  }
+}
+@media (min-width: 180rem) {
+  html {
+    font-size: 80%;
+  }
 }
 
 body {
